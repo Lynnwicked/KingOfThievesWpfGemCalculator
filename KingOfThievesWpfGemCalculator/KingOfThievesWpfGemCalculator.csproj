@@ -35,11 +35,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Prism, Version=7.1.0.431, Culture=neutral, PublicKeyToken=40ee6c3a2184dc59, processorArchitecture=MSIL">
-      <HintPath>..\packages\Prism.Core.7.1.0.431\lib\net45\Prism.dll</HintPath>
+    <Reference Include="Prism, Version=7.2.0.708, Culture=neutral, PublicKeyToken=40ee6c3a2184dc59, processorArchitecture=MSIL">
+      <HintPath>..\packages\Prism.Core.7.2.0.708-pre\lib\net45\Prism.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -52,6 +53,9 @@
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="WpfAnimatedGif, Version=1.4.17.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WpfAnimatedGif.1.4.17\lib\net\WpfAnimatedGif.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -100,7 +104,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="packages.config">
@@ -114,5 +118,53 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\dance.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Audio\CrossingField.wav" />
+    <Resource Include="Resources\Images\Gems\Green\Green1.png" />
+    <Resource Include="Resources\Images\Gems\Green\Green2.png" />
+    <Resource Include="Resources\Images\Gems\Green\Green3.png" />
+    <Resource Include="Resources\Images\Gems\Green\Green4.png" />
+    <Resource Include="Resources\Images\Gems\Green\Green5.png" />
+    <Resource Include="Resources\Images\Gems\Green\Green6.png" />
+    <Resource Include="Resources\Images\Gems\Green\Green7.png" />
+    <Resource Include="Resources\Images\Gems\Green\Green8.png" />
+    <Resource Include="Resources\Images\Gems\Purple\Purple1.png" />
+    <Resource Include="Resources\Images\Gems\Purple\Purple2.png" />
+    <Resource Include="Resources\Images\Gems\Purple\Purple3.png" />
+    <Resource Include="Resources\Images\Gems\Purple\Purple4.png" />
+    <Resource Include="Resources\Images\Gems\Purple\Purple5.png" />
+    <Resource Include="Resources\Images\Gems\Purple\Purple6.png" />
+    <Resource Include="Resources\Images\Gems\Purple\Purple7.png" />
+    <Resource Include="Resources\Images\Gems\Purple\Purple8.png" />
+    <Resource Include="Resources\Images\Gems\Red\Red1.png" />
+    <Resource Include="Resources\Images\Gems\Red\Red2.png" />
+    <Resource Include="Resources\Images\Gems\Red\Red3.png" />
+    <Resource Include="Resources\Images\Gems\Red\Red4.png" />
+    <Resource Include="Resources\Images\Gems\Red\Red5.png" />
+    <Resource Include="Resources\Images\Gems\Red\Red6.png" />
+    <Resource Include="Resources\Images\Gems\Red\Red7.png" />
+    <Resource Include="Resources\Images\Gems\Red\Red8.png" />
+    <Resource Include="Resources\Images\Gems\Yellow\Yellow1.png" />
+    <Resource Include="Resources\Images\Gems\Yellow\Yellow2.png" />
+    <Resource Include="Resources\Images\Gems\Yellow\Yellow3.png" />
+    <Resource Include="Resources\Images\Gems\Yellow\Yellow4.png" />
+    <Resource Include="Resources\Images\Gems\Yellow\Yellow5.png" />
+    <Resource Include="Resources\Images\Gems\Yellow\Yellow6.png" />
+    <Resource Include="Resources\Images\Gems\Yellow\Yellow7.png" />
+    <Resource Include="Resources\Images\Gems\Yellow\Yellow8.png" />
+    <Resource Include="Resources\Images\Gems\Blue\Blue1.png" />
+    <Resource Include="Resources\Images\Gems\Blue\Blue2.png" />
+    <Resource Include="Resources\Images\Gems\Blue\Blue3.png" />
+    <Resource Include="Resources\Images\Gems\Blue\Blue4.png" />
+    <Resource Include="Resources\Images\Gems\Blue\Blue5.png" />
+    <Resource Include="Resources\Images\Gems\Blue\Blue6.png" />
+    <Resource Include="Resources\Images\Gems\Blue\Blue7.png" />
+    <Resource Include="Resources\Images\Gems\Blue\Blue8.png" />
+    <Resource Include="Resources\Images\kotIcon.png" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

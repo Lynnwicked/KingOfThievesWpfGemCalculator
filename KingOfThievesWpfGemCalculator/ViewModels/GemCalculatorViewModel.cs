@@ -5,6 +5,7 @@ using System.Windows;
 using System.Windows.Input;
 using KingOfThievesWpfGemCalculator.Annotations;
 using KingOfThievesWpfGemCalculator.Resources.Constants;
+using KingOfThievesWpfGemCalculator.Views;
 using Prism.Commands;
 
 namespace KingOfThievesWpfGemCalculator.ViewModels {
@@ -155,7 +156,11 @@ namespace KingOfThievesWpfGemCalculator.ViewModels {
       ExitCommand = new DelegateCommand(Exit);
     }
 
-    private void About() { }
+    private static void About() {
+      var about = new AboutView();
+
+      about.ShowDialog();
+    }
 
     private void CalculateActualBonus(int goal) {
       _numericActualBonus = _numericBonus - Math.Abs(goal - _numericTotalWithBonus);

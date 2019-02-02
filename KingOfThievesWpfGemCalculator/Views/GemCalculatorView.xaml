@@ -1,6 +1,7 @@
 ﻿<Window x:Class="KingOfThievesWpfGemCalculator.Views.GemCalculatorView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Icon="../Resources/Images/kotIcon.png"
         ResizeMode="NoResize"
         Title="King Of Thieves Gem Calculator"
         WindowStartupLocation="CenterScreen"
