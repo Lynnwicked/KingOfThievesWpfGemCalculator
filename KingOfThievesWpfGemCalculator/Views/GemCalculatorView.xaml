@@ -116,8 +116,7 @@
               <ColumnDefinition Width="Auto" />
               <ColumnDefinition Width="Auto" />
               <ColumnDefinition Width="Auto" />
-              <ColumnDefinition Width="31.667" />
-              <ColumnDefinition Width="52.333"/>
+              <ColumnDefinition Width="Auto" />
               <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
 
@@ -135,9 +134,9 @@
                      IsReadOnly="True"
                      Text="{Binding Bonus, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
 
-            <Label Grid.Row="0" Grid.Column="4" Content="Total w/Bonus" Grid.ColumnSpan="2" />
+            <Label Grid.Row="0" Grid.Column="4" Content="Total w/Bonus" />
             <TextBox Grid.Row="0"
-                     Grid.Column="6"
+                     Grid.Column="5"
                      IsEnabled="False"
                      IsReadOnly="True"
                      Text="{Binding TotalWithBonus, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
