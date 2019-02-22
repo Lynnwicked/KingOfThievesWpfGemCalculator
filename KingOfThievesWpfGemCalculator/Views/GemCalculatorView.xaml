@@ -86,7 +86,7 @@
             </StackPanel>
 
             <Label Grid.Row="3" Grid.Column="0" Content="Bonus" />
-            <StackPanel Grid.Row="3" Grid.Column="1" Orientation="Horizontal">
+            <StackPanel Grid.Row="3" Grid.Column="1" Orientation="Horizontal" Margin="0">
               <TextBox MaxLength="3" MinWidth="25" Width="20" PreviewTextInput="NumberTextBoxValueChanged" Text="{Binding BonusPercentage, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" TabIndex="3" />
               <Label Content="%" />
             </StackPanel>
@@ -143,10 +143,15 @@
           <TextBox Grid.Row="2" Grid.Column="1" IsEnabled="False" IsReadOnly="True" Text="{Binding ResultTotal, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
 
           <Label Grid.Row="3" Grid.Column="0" Content="Gem Result" />
-          <Image Grid.Row="3" Grid.Column="1" Height="48" Width="48" Source="{Binding GemResult}" />
+          <Border Grid.Row="3" Grid.Column="1" BorderBrush="LightGray" BorderThickness="1" HorizontalAlignment="Left">
+            <Image Height="48" Width="48" Source="{Binding GemResult}" />
+          </Border>
+          
 
           <Label Grid.Row="3" Grid.Column="2" Content="Bonus Potion" />
-          <Image Grid.Row="3" Grid.Column="3" Height="48" Width="48" Source="{Binding PotionResult}" />
+          <Border Grid.Row="3" Grid.Column="3" BorderBrush="LightGray" BorderThickness="1" HorizontalAlignment="Left">
+            <Image Height="48" Width="48" Source="{Binding PotionResult}" />
+          </Border>
         </Grid>
       </GroupBox>
     </Grid>

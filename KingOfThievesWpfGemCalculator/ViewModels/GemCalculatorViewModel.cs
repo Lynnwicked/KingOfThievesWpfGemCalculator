@@ -3,7 +3,6 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows;
 using System.Windows.Input;
-using System.Windows.Media.Imaging;
 using KingOfThievesWpfGemCalculator.Annotations;
 using KingOfThievesWpfGemCalculator.Resources.Constants;
 using KingOfThievesWpfGemCalculator.Utilities;
@@ -27,7 +26,7 @@ namespace KingOfThievesWpfGemCalculator.ViewModels {
     private string _thirdGem;
     private string _thirdGemColor;
     private string _totalWithBonus;
-    
+
     private int _numericBonus;
     private int _numericBonusPercentage;
     private int _numericResultTotal;
@@ -201,7 +200,7 @@ namespace KingOfThievesWpfGemCalculator.ViewModels {
 
       CalculateTotals();
 
-      if (_numericTotalWithBonus <= (Constants.SEMI_PERFECT_GEM_SIZE + _numericBonus)) {
+      if (_numericTotalWithBonus <= Constants.SEMI_PERFECT_GEM_SIZE + _numericBonus) {
         CalculateSemiPerfectRitual();
       }
       else {

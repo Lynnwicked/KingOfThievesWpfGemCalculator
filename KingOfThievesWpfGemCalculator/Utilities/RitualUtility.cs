@@ -1,4 +1,5 @@
 ﻿using System;
+using KingOfThievesWpfGemCalculator.Resources.Constants;
 
 namespace KingOfThievesWpfGemCalculator.Utilities {
   public static class RitualUtility {
@@ -27,14 +28,14 @@ namespace KingOfThievesWpfGemCalculator.Utilities {
       else if (gemSize > 100000 && gemSize <= 299999) {
         result = $"pack://application:,,,/Resources/Images/Gems/{gemColor}/{gemColor}ClassSeven.png";
       }
-      else if (gemSize > 300000 && gemSize <= 999999) {
+      else if (gemSize > 300000 && gemSize <= Constants.SEMI_PERFECT_GEM_SIZE) {
         result = $"pack://application:,,,/Resources/Images/Gems/{gemColor}/{gemColor}ClassEight.png";
       }
-      else if (gemSize > 1000000 && gemSize < 2999997) {
+      else if (gemSize > 1000000 && gemSize < Constants.PERFECT_GEM_SIZE) {
         result = $"pack://application:,,,/Resources/Images/Gems/{gemColor}/{gemColor}ClassNine.png";
       }
-      else if (gemSize == 2999997) {
-        result = $"pack://application:,,,/Resources/Images/Gems/Perfect/Perfect.png";
+      else if (gemSize == Constants.PERFECT_GEM_SIZE) {
+        result = "pack://application:,,,/Resources/Images/Gems/Perfect/Perfect.png";
       }
       else {
         throw new InvalidOperationException($"Invalid gem size: {gemSize}");
