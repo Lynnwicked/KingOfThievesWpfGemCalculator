@@ -3,46 +3,39 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows;
 using System.Windows.Input;
+using System.Windows.Media.Imaging;
 using KingOfThievesWpfGemCalculator.Annotations;
 using KingOfThievesWpfGemCalculator.Resources.Constants;
+using KingOfThievesWpfGemCalculator.Utilities;
 using KingOfThievesWpfGemCalculator.Views;
 using Prism.Commands;
 
 namespace KingOfThievesWpfGemCalculator.ViewModels {
   public class GemCalculatorViewModel : INotifyPropertyChanged {
-    private string _actualBonus;
     private string _bonus;
     private string _bonusPercentage;
     private string _firstGem;
-    private string _gemResult;
+    private string _firstGemColor;
     private string _gemTotal;
+    private string _gemResult;
     private string _goal;
+    private string _potionResult;
     private string _remaining;
+    private string _resultTotal;
     private string _secondGem;
+    private string _secondGemColor;
     private string _thirdGem;
+    private string _thirdGemColor;
     private string _totalWithBonus;
-
-    private int _numericActualBonus;
+    
     private int _numericBonus;
     private int _numericBonusPercentage;
+    private int _numericResultTotal;
     private int _numericTotal;
     private int _numericTotalWithBonus;
 
-    private bool _perfectRitual;
-    private bool _semiPerfectRitual;
-
     public GemCalculatorViewModel() {
-      SemiPerfectRitual = true;
-
       RegisterCommands();
-    }
-
-    public string ActualBonus {
-      get => _actualBonus;
-      set {
-        _actualBonus = value;
-        OnPropertyChanged();
-      }
     }
 
     public string Bonus {
@@ -69,18 +62,18 @@ namespace KingOfThievesWpfGemCalculator.ViewModels {
       }
     }
 
-    public string GemResult {
-      get => _gemResult;
-      set {
-        _gemResult = value;
-        OnPropertyChanged();
-      }
-    }
-
     public string GemTotal {
       get => _gemTotal;
       set {
         _gemTotal = value;
+        OnPropertyChanged();
+      }
+    }
+
+    public string GemResult {
+      get => _gemResult;
+      set {
+        _gemResult = value;
         OnPropertyChanged();
       }
     }
@@ -93,10 +86,26 @@ namespace KingOfThievesWpfGemCalculator.ViewModels {
       }
     }
 
+    public string PotionResult {
+      get => _potionResult;
+      set {
+        _potionResult = value;
+        OnPropertyChanged();
+      }
+    }
+
     public string Remaining {
       get => _remaining;
       set {
         _remaining = value;
+        OnPropertyChanged();
+      }
+    }
+
+    public string ResultTotal {
+      get => _resultTotal;
+      set {
+        _resultTotal = value;
         OnPropertyChanged();
       }
     }
@@ -125,22 +134,6 @@ namespace KingOfThievesWpfGemCalculator.ViewModels {
       }
     }
 
-    public bool PerfectRitual {
-      get => _perfectRitual;
-      set {
-        _perfectRitual = value;
-        OnPropertyChanged();
-      }
-    }
-
-    public bool SemiPerfectRitual {
-      get => _semiPerfectRitual;
-      set {
-        _semiPerfectRitual = value;
-        OnPropertyChanged();
-      }
-    }
-
     public ICommand AboutCommand { get; private set; }
 
     public ICommand CalculateRitualCommand { get; private set; }
@@ -148,6 +141,31 @@ namespace KingOfThievesWpfGemCalculator.ViewModels {
     public ICommand ClearCommand { get; private set; }
 
     public ICommand ExitCommand { get; private set; }
+
+    public void SetGemColor(object tag) {
+      var split = ((string) tag).Split('|');
+
+      var type = split[0];
+      var color = split[1];
+
+      switch (type) {
+        case "first":
+          _firstGemColor = color;
+
+          break;
+        case "second":
+          _secondGemColor = color;
+
+          break;
+        case "third":
+          _thirdGemColor = color;
+
+          break;
+        default:
+
+          throw new InvalidOperationException($"Invalid gem type: {type}");
+      }
+    }
 
     private void RegisterCommands() {
       AboutCommand = new DelegateCommand(About);
@@ -163,11 +181,13 @@ namespace KingOfThievesWpfGemCalculator.ViewModels {
     }
 
     private void CalculateActualBonus(int goal) {
-      _numericActualBonus = _numericBonus - Math.Abs(goal - _numericTotalWithBonus);
+      _numericBonus = _numericBonus - Math.Abs(goal - _numericTotalWithBonus);
 
-      ActualBonus = _numericActualBonus.ToString();
+      Bonus = _numericBonus.ToString();
 
-      GemResult = Goal;
+      ResultTotal = Goal;
+
+      _numericResultTotal = int.Parse(ResultTotal);
 
       Remaining = "0";
     }
@@ -181,15 +201,15 @@ namespace KingOfThievesWpfGemCalculator.ViewModels {
 
       CalculateTotals();
 
-      if (SemiPerfectRitual) {
+      if (_numericTotalWithBonus <= (Constants.SEMI_PERFECT_GEM_SIZE + _numericBonus)) {
         CalculateSemiPerfectRitual();
-
-        return;
       }
-
-      if (PerfectRitual) {
+      else {
         CalculatePerfectRitual();
       }
+
+      GemResult = RitualUtility.GetGemResultImage(_numericResultTotal, _thirdGemColor);
+      PotionResult = RitualUtility.GetPotionResultImage(_firstGemColor, _secondGemColor, _thirdGemColor);
     }
 
     private void CalculatePerfectRitual() {
@@ -206,13 +226,13 @@ namespace KingOfThievesWpfGemCalculator.ViewModels {
     }
 
     private void CalculateRemaining(int goal) {
-      ActualBonus = Bonus;
+      ResultTotal = TotalWithBonus;
 
-      GemResult = TotalWithBonus;
+      _numericResultTotal = int.Parse(ResultTotal);
 
-      var percentage = (double)_numericBonusPercentage / 100 + 1;
+      var percentage = (double) _numericBonusPercentage / 100 + 1;
 
-      var maxWithoutBonus = (int)Math.Round(goal / percentage);
+      var maxWithoutBonus = (int) Math.Round(goal / percentage);
 
       var result = maxWithoutBonus - _numericTotal;
 
@@ -255,20 +275,17 @@ namespace KingOfThievesWpfGemCalculator.ViewModels {
     }
 
     private void Clear() {
-      ActualBonus = null;
+      Bonus = null;
       Bonus = null;
       BonusPercentage = null;
       FirstGem = null;
-      GemResult = null;
+      ResultTotal = null;
       Goal = null;
       GemTotal = null;
       Remaining = null;
       SecondGem = null;
       ThirdGem = null;
       TotalWithBonus = null;
-
-      SemiPerfectRitual = true;
-      PerfectRitual = false;
     }
 
     private static void Exit() {
@@ -280,25 +297,25 @@ namespace KingOfThievesWpfGemCalculator.ViewModels {
     }
 
     private bool Validate() {
-      if (string.IsNullOrWhiteSpace(FirstGem) || !int.TryParse(FirstGem, out _)) {
+      if (string.IsNullOrWhiteSpace(FirstGem) || !int.TryParse(FirstGem, out var value) || value < 1) {
         MessageBox.Show("First gem is invalid, please enter a valid positive number", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
 
         return false;
       }
 
-      if (string.IsNullOrWhiteSpace(SecondGem) || !int.TryParse(SecondGem, out _)) {
+      if (string.IsNullOrWhiteSpace(SecondGem) || !int.TryParse(SecondGem, out value) || value < 1) {
         MessageBox.Show("Second gem is invalid, please enter a valid positive number", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
 
         return false;
       }
 
-      if (string.IsNullOrWhiteSpace(ThirdGem) || !int.TryParse(ThirdGem, out _)) {
+      if (string.IsNullOrWhiteSpace(ThirdGem) || !int.TryParse(ThirdGem, out value) || value < 1) {
         MessageBox.Show("Third gem is invalid, please enter a valid positive number", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
 
         return false;
       }
 
-      if (string.IsNullOrWhiteSpace(BonusPercentage) || !int.TryParse(BonusPercentage, out _)) {
+      if (string.IsNullOrWhiteSpace(BonusPercentage) || !int.TryParse(BonusPercentage, out value) || value < 1) {
         MessageBox.Show("Bonus percentage is invalid, please enter a valid positive number", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
 
         return false;

@@ -66,7 +66,13 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Properties\Annotations.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Resources\Constants\Constants.cs" />
+    <Compile Include="Utilities\RitualUtility.cs" />
     <Compile Include="ViewModels\AboutViewModel.cs" />
     <Compile Include="ViewModels\GemCalculatorViewModel.cs" />
     <Compile Include="Views\AboutView.xaml.cs">
@@ -96,11 +102,6 @@
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -108,6 +109,7 @@
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="packages.config" />
@@ -115,6 +117,8 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <None Include="Resources\Images\Gems\kotImperfectGems.xcf" />
+    <None Include="Resources\Images\Gems\kotPerfectGem.xcf" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -124,46 +128,57 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\Audio\CrossingField.wav" />
-    <Resource Include="Resources\Images\Gems\Green\Green1.png" />
-    <Resource Include="Resources\Images\Gems\Green\Green2.png" />
-    <Resource Include="Resources\Images\Gems\Green\Green3.png" />
-    <Resource Include="Resources\Images\Gems\Green\Green4.png" />
-    <Resource Include="Resources\Images\Gems\Green\Green5.png" />
-    <Resource Include="Resources\Images\Gems\Green\Green6.png" />
-    <Resource Include="Resources\Images\Gems\Green\Green7.png" />
-    <Resource Include="Resources\Images\Gems\Green\Green8.png" />
-    <Resource Include="Resources\Images\Gems\Purple\Purple1.png" />
-    <Resource Include="Resources\Images\Gems\Purple\Purple2.png" />
-    <Resource Include="Resources\Images\Gems\Purple\Purple3.png" />
-    <Resource Include="Resources\Images\Gems\Purple\Purple4.png" />
-    <Resource Include="Resources\Images\Gems\Purple\Purple5.png" />
-    <Resource Include="Resources\Images\Gems\Purple\Purple6.png" />
-    <Resource Include="Resources\Images\Gems\Purple\Purple7.png" />
-    <Resource Include="Resources\Images\Gems\Purple\Purple8.png" />
-    <Resource Include="Resources\Images\Gems\Red\Red1.png" />
-    <Resource Include="Resources\Images\Gems\Red\Red2.png" />
-    <Resource Include="Resources\Images\Gems\Red\Red3.png" />
-    <Resource Include="Resources\Images\Gems\Red\Red4.png" />
-    <Resource Include="Resources\Images\Gems\Red\Red5.png" />
-    <Resource Include="Resources\Images\Gems\Red\Red6.png" />
-    <Resource Include="Resources\Images\Gems\Red\Red7.png" />
-    <Resource Include="Resources\Images\Gems\Red\Red8.png" />
-    <Resource Include="Resources\Images\Gems\Yellow\Yellow1.png" />
-    <Resource Include="Resources\Images\Gems\Yellow\Yellow2.png" />
-    <Resource Include="Resources\Images\Gems\Yellow\Yellow3.png" />
-    <Resource Include="Resources\Images\Gems\Yellow\Yellow4.png" />
-    <Resource Include="Resources\Images\Gems\Yellow\Yellow5.png" />
-    <Resource Include="Resources\Images\Gems\Yellow\Yellow6.png" />
-    <Resource Include="Resources\Images\Gems\Yellow\Yellow7.png" />
-    <Resource Include="Resources\Images\Gems\Yellow\Yellow8.png" />
-    <Resource Include="Resources\Images\Gems\Blue\Blue1.png" />
-    <Resource Include="Resources\Images\Gems\Blue\Blue2.png" />
-    <Resource Include="Resources\Images\Gems\Blue\Blue3.png" />
-    <Resource Include="Resources\Images\Gems\Blue\Blue4.png" />
-    <Resource Include="Resources\Images\Gems\Blue\Blue5.png" />
-    <Resource Include="Resources\Images\Gems\Blue\Blue6.png" />
-    <Resource Include="Resources\Images\Gems\Blue\Blue7.png" />
-    <Resource Include="Resources\Images\Gems\Blue\Blue8.png" />
+    <Resource Include="Resources\Images\Potions\Ghost.png" />
+    <Resource Include="Resources\Images\Potions\DisableTrap.png" />
+    <Resource Include="Resources\Images\Potions\DoubleGold.png" />
+    <Resource Include="Resources\Images\Potions\GangOfThieves.png" />
+    <Resource Include="Resources\Images\Potions\SlowMotion.png" />
+    <Resource Include="Resources\Images\Gems\Yellow\YellowClassNine.png" />
+    <Resource Include="Resources\Images\Gems\Red\RedClassNine.png" />
+    <Resource Include="Resources\Images\Gems\Purple\PurpleClassNine.png" />
+    <Resource Include="Resources\Images\Gems\Green\GreenClassNine.png" />
+    <Resource Include="Resources\Images\Gems\Blue\BlueClassNine.png" />
+    <Resource Include="Resources\Images\Gems\Perfect\Perfect.png" />
+    <Resource Include="Resources\Images\Gems\Green\GreenClassOne.png" />
+    <Resource Include="Resources\Images\Gems\Green\GreenClassTwo.png" />
+    <Resource Include="Resources\Images\Gems\Green\GreenClassThree.png" />
+    <Resource Include="Resources\Images\Gems\Green\GreenClassFour.png" />
+    <Resource Include="Resources\Images\Gems\Green\GreenClassFive.png" />
+    <Resource Include="Resources\Images\Gems\Green\GreenClassSix.png" />
+    <Resource Include="Resources\Images\Gems\Green\GreenClassSeven.png" />
+    <Resource Include="Resources\Images\Gems\Green\GreenClassEight.png" />
+    <Resource Include="Resources\Images\Gems\Purple\PurpleClassOne.png" />
+    <Resource Include="Resources\Images\Gems\Purple\PurpleClassTwo.png" />
+    <Resource Include="Resources\Images\Gems\Purple\PurpleClassThree.png" />
+    <Resource Include="Resources\Images\Gems\Purple\PurpleClassFour.png" />
+    <Resource Include="Resources\Images\Gems\Purple\PurpleClassFive.png" />
+    <Resource Include="Resources\Images\Gems\Purple\PurpleClassSix.png" />
+    <Resource Include="Resources\Images\Gems\Purple\PurpleClassSeven.png" />
+    <Resource Include="Resources\Images\Gems\Purple\PurpleClassEight.png" />
+    <Resource Include="Resources\Images\Gems\Red\RedClassOne.png" />
+    <Resource Include="Resources\Images\Gems\Red\RedClassTwo.png" />
+    <Resource Include="Resources\Images\Gems\Red\RedClassThree.png" />
+    <Resource Include="Resources\Images\Gems\Red\RedClassFour.png" />
+    <Resource Include="Resources\Images\Gems\Red\RedClassFive.png" />
+    <Resource Include="Resources\Images\Gems\Red\RedClassSix.png" />
+    <Resource Include="Resources\Images\Gems\Red\RedClassSeven.png" />
+    <Resource Include="Resources\Images\Gems\Red\RedClassEight.png" />
+    <Resource Include="Resources\Images\Gems\Yellow\YellowClassOne.png" />
+    <Resource Include="Resources\Images\Gems\Yellow\YellowClassTwo.png" />
+    <Resource Include="Resources\Images\Gems\Yellow\YellowClassThree.png" />
+    <Resource Include="Resources\Images\Gems\Yellow\YellowClassFour.png" />
+    <Resource Include="Resources\Images\Gems\Yellow\YellowClassFive.png" />
+    <Resource Include="Resources\Images\Gems\Yellow\YellowClassSix.png" />
+    <Resource Include="Resources\Images\Gems\Yellow\YellowClassSeven.png" />
+    <Resource Include="Resources\Images\Gems\Yellow\YellowClassEight.png" />
+    <Resource Include="Resources\Images\Gems\Blue\BlueClassOne.png" />
+    <Resource Include="Resources\Images\Gems\Blue\BlueClassTwo.png" />
+    <Resource Include="Resources\Images\Gems\Blue\BlueClassThree.png" />
+    <Resource Include="Resources\Images\Gems\Blue\BlueClassFour.png" />
+    <Resource Include="Resources\Images\Gems\Blue\BlueClassFive.png" />
+    <Resource Include="Resources\Images\Gems\Blue\BlueClassSix.png" />
+    <Resource Include="Resources\Images\Gems\Blue\BlueClassSeven.png" />
+    <Resource Include="Resources\Images\Gems\Blue\BlueClassEight.png" />
     <Resource Include="Resources\Images\kotIcon.png" />
   </ItemGroup>
   <ItemGroup />

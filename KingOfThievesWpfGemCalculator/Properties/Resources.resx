@@ -118,133 +118,166 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Blue1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\images\gems\blue\blue1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Blue2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\images\gems\blue\blue2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Blue3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\images\gems\blue\blue3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Blue4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\images\gems\blue\blue4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Blue5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\images\gems\blue\blue5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Blue6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\images\gems\blue\blue6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Blue7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\images\gems\blue\blue7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Blue8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\images\gems\blue\blue8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="CrossingField" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\audio\crossingfield.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="dance" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\images\dance.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Green1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\images\gems\green\green1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Green2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\images\gems\green\green2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Green3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\images\gems\green\green3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Green4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\images\gems\green\green4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Green5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\images\gems\green\green5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Green6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\images\gems\green\green6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Green7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\images\gems\green\green7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Green8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\images\gems\green\green8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="kotIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\images\koticon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Purple1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\images\gems\purple\purple1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Perfect" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\gems\perfect\perfect.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Purple2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\images\gems\purple\purple2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="DisableTrap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\potions\disabletrap.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Purple3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\images\gems\purple\purple3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="DoubleGold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\potions\doublegold.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Purple4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\images\gems\purple\purple4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GangOfThieves" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\potions\gangofthieves.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Purple5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\images\gems\purple\purple5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="SlowMotion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\potions\slowmotion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Purple6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\images\gems\purple\purple6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BlueClassEight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\gems\blue\blueclasseight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Purple7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\images\gems\purple\purple7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BlueClassFive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\gems\blue\blueclassfive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Purple8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\images\gems\purple\purple8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BlueClassFour" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\gems\blue\blueclassfour.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Red1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\images\gems\red\red1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BlueClassNine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\gems\blue\blueclassnine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Red2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\images\gems\red\red2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BlueClassOne" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\gems\blue\blueclassone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Red3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\images\gems\red\red3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BlueClassSeven" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\gems\blue\blueclassseven.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Red4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\images\gems\red\red4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BlueClassSix" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\gems\blue\blueclasssix.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Red5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\images\gems\red\red5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BlueClassThree" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\gems\blue\blueclassthree.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Red6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\images\gems\red\red6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BlueClassTwo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\gems\blue\blueclasstwo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Red7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\images\gems\red\red7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GreenClassEight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\gems\green\greenclasseight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Red8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\images\gems\red\red8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GreenClassFive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\gems\green\greenclassfive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Yellow1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\images\gems\yellow\yellow1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GreenClassFour" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\gems\green\greenclassfour.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Yellow2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\images\gems\yellow\yellow2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GreenClassNine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\gems\green\greenclassnine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Yellow3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\images\gems\yellow\yellow3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GreenClassOne" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\gems\green\greenclassone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Yellow4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\images\gems\yellow\yellow4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GreenClassSeven" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\gems\green\greenclassseven.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Yellow5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\images\gems\yellow\yellow5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GreenClassSix" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\gems\green\greenclasssix.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Yellow6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\images\gems\yellow\yellow6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GreenClassThree" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\gems\green\greenclassthree.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Yellow7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\images\gems\yellow\yellow7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GreenClassTwo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\gems\green\greenclasstwo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Yellow8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\images\gems\yellow\yellow8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="PurpleClassEight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\gems\purple\purpleclasseight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PurpleClassFive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\gems\purple\purpleclassfive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PurpleClassFour" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\gems\purple\purpleclassfour.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PurpleClassNine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\gems\purple\purpleclassnine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PurpleClassOne" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\gems\purple\purpleclassone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PurpleClassSeven" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\gems\purple\purpleclassseven.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PurpleClassSix" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\gems\purple\purpleclasssix.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PurpleClassThree" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\gems\purple\purpleclassthree.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PurpleClassTwo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\gems\purple\purpleclasstwo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RedClassEight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\gems\red\redclasseight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RedClassFive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\gems\red\redclassfive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RedClassFour" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\gems\red\redclassfour.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RedClassNine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\gems\red\redclassnine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RedClassOne" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\gems\red\redclassone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RedClassSeven" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\gems\red\redclassseven.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RedClassSix" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\gems\red\redclasssix.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RedClassThree" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\gems\red\redclassthree.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RedClassTwo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\gems\red\redclasstwo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="YellowClassEight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\gems\yellow\yellowclasseight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="YellowClassFive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\gems\yellow\yellowclassfive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="YellowClassFour" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\gems\yellow\yellowclassfour.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="YellowClassNine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\gems\yellow\yellowclassnine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="YellowClassOne" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\gems\yellow\yellowclassone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="YellowClassSeven" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\gems\yellow\yellowclassseven.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="YellowClassSix" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\gems\yellow\yellowclasssix.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="YellowClassThree" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\gems\yellow\yellowclassthree.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="YellowClassTwo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\gems\yellow\yellowclasstwo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ghost" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\images\potions\ghost.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -29,83 +29,15 @@
       </Grid.RowDefinitions>
 
       <GroupBox Grid.Row="0" Header="Ritual Gems">
-        <Grid Margin="0,2,0,0">
-          <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-          </Grid.RowDefinitions>
-
-          <Grid Grid.Row="0">
-            <Grid.ColumnDefinitions>
-              <ColumnDefinition Width="Auto" />
-              <ColumnDefinition Width="Auto" />
-              <ColumnDefinition Width="Auto" />
-              <ColumnDefinition Width="Auto" />
-              <ColumnDefinition Width="Auto" />
-              <ColumnDefinition Width="Auto" />
-              <ColumnDefinition Width="Auto" />
-              <ColumnDefinition Width="Auto" />
-              <ColumnDefinition Width="Auto" />
-            </Grid.ColumnDefinitions>
-
-            <Label Grid.Column="0" Content="First" />
-            <TextBox Grid.Column="1"
-                     x:Name="FirstGemTextBox"
-                     MaxLength="6"
-                     PreviewTextInput="NumberTextBoxValueChanged"
-                     Text="{Binding FirstGem, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-                     TabIndex="0" />
-
-            <Label Grid.Column="2" Content="Second" />
-            <TextBox Grid.Column="3"
-                     MaxLength="6"
-                     PreviewTextInput="NumberTextBoxValueChanged"
-                     Text="{Binding SecondGem, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-                     TabIndex="1" />
-
-            <Label Grid.Column="4" Content="Third" />
-            <TextBox Grid.Column="5"
-                     MaxLength="6"
-                     PreviewTextInput="NumberTextBoxValueChanged"
-                     Text="{Binding ThirdGem, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-                     TabIndex="2" />
-
-            <Label Grid.Column="6" Content="Bonus" />
-            <TextBox Grid.Column="7"
-                     MaxLength="3"
-                     MinWidth="25" PreviewTextInput="NumberTextBoxValueChanged"
-                     Text="{Binding BonusPercentage, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-                     TabIndex="3" HorizontalAlignment="Right" Width="20" />
-            <Label Grid.Column="8" Content="%" HorizontalAlignment="Left" />
-          </Grid>
-
-          <StackPanel Grid.Row="1" HorizontalAlignment="Left" Orientation="Horizontal" Margin="0,2,0,0">
-            <RadioButton Content="Semi-Perfect"
-                         GroupName="RitualType"
-                         Margin="0,0,4,0"
-                         IsChecked="{Binding SemiPerfectRitual, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-                         IsTabStop="False" />
-            <RadioButton Content="Perfect"
-                         GroupName="RitualType"
-                         IsChecked="{Binding PerfectRitual, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-                         IsTabStop="False" />
-          </StackPanel>
-
-          <StackPanel Grid.Row="1" HorizontalAlignment="Right" Orientation="Horizontal">
-            <Button Content="Calculate" Command="{Binding CalculateRitualCommand}" Margin="0,0,4,0" />
-            <Button Content="Clear" Command="{Binding ClearCommand}" />
-          </StackPanel>
-        </Grid>
-      </GroupBox>
-
-      <GroupBox Grid.Row="1" Header="Ritual Results">
         <Grid>
           <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
           </Grid.RowDefinitions>
 
           <Grid Grid.Row="0">
             <Grid.RowDefinitions>
+              <RowDefinition Height="Auto" />
               <RowDefinition Height="Auto" />
               <RowDefinition Height="Auto" />
               <RowDefinition Height="Auto" />
@@ -115,60 +47,106 @@
               <ColumnDefinition Width="Auto" />
               <ColumnDefinition Width="Auto" />
               <ColumnDefinition Width="Auto" />
-              <ColumnDefinition Width="Auto" />
-              <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" Content="First" />
+            <TextBox Grid.Row="0"
+                     Grid.Column="1"
+                     x:Name="FirstGemTextBox"
+                     MaxLength="6"
+                     PreviewTextInput="NumberTextBoxValueChanged"
+                     Text="{Binding FirstGem, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                     TabIndex="0" />
+            <StackPanel Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" Orientation="Horizontal">
+              <RadioButton Content="Blue" GroupName="FirstGemColor" Margin="0,0,4,0" Checked="GemColorChanged" Tag="first|Blue" IsTabStop="False" x:Name="FirstColorDefault" />
+              <RadioButton Content="Green" GroupName="FirstGemColor" Margin="0,0,4,0" Checked="GemColorChanged" Tag="first|Green" IsTabStop="False" />
+              <RadioButton Content="Purple" GroupName="FirstGemColor" Margin="0,0,4,0" Checked="GemColorChanged" Tag="first|Purple" IsTabStop="False" />
+              <RadioButton Content="Red" GroupName="FirstGemColor" Margin="0,0,4,0" Checked="GemColorChanged" Tag="first|Red" IsTabStop="False" />
+              <RadioButton Content="Yellow" GroupName="FirstGemColor" Checked="GemColorChanged" Tag="first|Yellow" IsTabStop="False" />
+            </StackPanel>
+
+            <Label Grid.Row="1" Grid.Column="0" Content="Second" />
+            <TextBox Grid.Row="1" Grid.Column="1" MaxLength="6" PreviewTextInput="NumberTextBoxValueChanged" Text="{Binding SecondGem, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" TabIndex="1" />
+            <StackPanel Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" Orientation="Horizontal">
+              <RadioButton Content="Blue" GroupName="SecondGemColor" Margin="0,0,4,0" Checked="GemColorChanged" Tag="second|Blue" IsTabStop="False" x:Name="SecondColorDefault" />
+              <RadioButton Content="Green" GroupName="SecondGemColor" Margin="0,0,4,0" Checked="GemColorChanged" Tag="second|Green" IsTabStop="False" />
+              <RadioButton Content="Purple" GroupName="SecondGemColor" Margin="0,0,4,0" Checked="GemColorChanged" Tag="second|Purple" IsTabStop="False" />
+              <RadioButton Content="Red" GroupName="SecondGemColor" Margin="0,0,4,0" Checked="GemColorChanged" Tag="second|Red" IsTabStop="False" />
+              <RadioButton Content="Yellow" GroupName="SecondGemColor" Checked="GemColorChanged" Tag="second|Yellow" IsTabStop="False" />
+            </StackPanel>
+
+            <Label Grid.Row="2" Grid.Column="0" Content="Third" />
+            <TextBox Grid.Row="2" Grid.Column="1" MaxLength="6" PreviewTextInput="NumberTextBoxValueChanged" Text="{Binding ThirdGem, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" TabIndex="2" />
+            <StackPanel Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" Orientation="Horizontal">
+              <RadioButton Content="Blue" GroupName="ThirdGemColor" Margin="0,0,4,0" Checked="GemColorChanged" Tag="third|Blue" IsTabStop="False" x:Name="ThirdColorDefault" />
+              <RadioButton Content="Green" GroupName="ThirdGemColor" Margin="0,0,4,0" Checked="GemColorChanged" Tag="third|Green" IsTabStop="False" />
+              <RadioButton Content="Purple" GroupName="ThirdGemColor" Margin="0,0,4,0" Checked="GemColorChanged" Tag="third|Purple" IsTabStop="False" />
+              <RadioButton Content="Red" GroupName="ThirdGemColor" Margin="0,0,4,0" Checked="GemColorChanged" Tag="third|Red" IsTabStop="False" />
+              <RadioButton Content="Yellow" GroupName="ThirdGemColor" Checked="GemColorChanged" Tag="third|Yellow" IsTabStop="False" />
+            </StackPanel>
+
+            <Label Grid.Row="3" Grid.Column="0" Content="Bonus" />
+            <StackPanel Grid.Row="3" Grid.Column="1" Orientation="Horizontal">
+              <TextBox MaxLength="3" MinWidth="25" Width="20" PreviewTextInput="NumberTextBoxValueChanged" Text="{Binding BonusPercentage, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" TabIndex="3" />
+              <Label Content="%" />
+            </StackPanel>
+
+            <StackPanel Grid.Row="3" Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Right">
+              <Button Content="Calculate" Command="{Binding CalculateRitualCommand}" Margin="0,0,4,0" />
+              <Button Content="Clear" Command="{Binding ClearCommand}" />
+            </StackPanel>
+          </Grid>
+
+          <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="*" />
               <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
 
-            <Label Grid.Row="0" Grid.Column="0" Content="Gem Total" />
-            <TextBox Grid.Row="0"
-                     Grid.Column="1"
-                     IsEnabled="False"
-                     IsReadOnly="True"
-                     Text="{Binding GemTotal, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
-
-            <Label Grid.Row="0" Grid.Column="2" Content="Bonus" />
-            <TextBox Grid.Row="0"
-                     Grid.Column="3"
-                     IsEnabled="False"
-                     IsReadOnly="True"
-                     Text="{Binding Bonus, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
-
-            <Label Grid.Row="0" Grid.Column="4" Content="Total w/Bonus" />
-            <TextBox Grid.Row="0"
-                     Grid.Column="5"
-                     IsEnabled="False"
-                     IsReadOnly="True"
-                     Text="{Binding TotalWithBonus, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
-
-            <Label Grid.Row="1" Grid.Column="0" Content="Goal" />
-            <TextBox Grid.Row="1"
-                     Grid.Column="1"
-                     IsEnabled="False"
-                     IsReadOnly="True"
-                     Text="{Binding Goal, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
-
-            <Label Grid.Row="1" Grid.Column="2" Content="Actual Bonus" />
-            <TextBox Grid.Row="1"
-                     Grid.Column="3"
-                     IsEnabled="False"
-                     IsReadOnly="True"
-                     Text="{Binding ActualBonus, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
-
-            <Label Grid.Row="2" Grid.Column="0" Content="Remaining" />
-            <TextBox Grid.Row="2"
-                     Grid.Column="1"
-                     IsEnabled="False"
-                     IsReadOnly="True"
-                     Text="{Binding Remaining, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
-
-            <Label Grid.Row="2" Grid.Column="2" Content="Gem Result" />
-            <TextBox Grid.Row="2"
-                     Grid.Column="3"
-                     IsEnabled="False"
-                     IsReadOnly="True"
-                     Text="{Binding GemResult, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            
           </Grid>
+        </Grid>
+      </GroupBox>
+
+      <GroupBox Grid.Row="1" Header="Ritual Results">
+        <Grid>
+          <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+          </Grid.RowDefinitions>
+
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+          </Grid.ColumnDefinitions>
+
+          <Label Grid.Row="0" Grid.Column="0" Content="Goal" />
+          <TextBox Grid.Row="0" Grid.Column="1" IsEnabled="False" IsReadOnly="True" Text="{Binding Goal, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+
+          <Label Grid.Row="0" Grid.Column="2" Content="Gem Total" />
+          <TextBox Grid.Row="0" Grid.Column="3" IsEnabled="False" IsReadOnly="True" Text="{Binding GemTotal, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+
+          <Label Grid.Row="1" Grid.Column="0" Content="Remaining" />
+          <TextBox Grid.Row="1" Grid.Column="1" IsEnabled="False" IsReadOnly="True" Text="{Binding Remaining, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+
+          <Label Grid.Row="1" Grid.Column="2" Content="Bonus" />
+          <TextBox Grid.Row="1" Grid.Column="3" IsEnabled="False" IsReadOnly="True" Text="{Binding Bonus, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+
+          <Label Grid.Row="2" Grid.Column="2" Content="Total w/Bonus" />
+          <TextBox Grid.Row="2" Grid.Column="3" IsEnabled="False" IsReadOnly="True" Text="{Binding TotalWithBonus, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+
+          <Label Grid.Row="2" Grid.Column="0" Content="Result Total" />
+          <TextBox Grid.Row="2" Grid.Column="1" IsEnabled="False" IsReadOnly="True" Text="{Binding ResultTotal, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+
+          <Label Grid.Row="3" Grid.Column="0" Content="Gem Result" />
+          <Image Grid.Row="3" Grid.Column="1" Height="48" Width="48" Source="{Binding GemResult}" />
+
+          <Label Grid.Row="3" Grid.Column="2" Content="Bonus Potion" />
+          <Image Grid.Row="3" Grid.Column="3" Height="48" Width="48" Source="{Binding PotionResult}" />
         </Grid>
       </GroupBox>
     </Grid>

@@ -63,9 +63,9 @@ namespace KingOfThievesWpfGemCalculator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Blue1 {
+        public static System.Drawing.Bitmap BlueClassEight {
             get {
-                object obj = ResourceManager.GetObject("Blue1", resourceCulture);
+                object obj = ResourceManager.GetObject("BlueClassEight", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace KingOfThievesWpfGemCalculator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Blue2 {
+        public static System.Drawing.Bitmap BlueClassFive {
             get {
-                object obj = ResourceManager.GetObject("Blue2", resourceCulture);
+                object obj = ResourceManager.GetObject("BlueClassFive", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace KingOfThievesWpfGemCalculator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Blue3 {
+        public static System.Drawing.Bitmap BlueClassFour {
             get {
-                object obj = ResourceManager.GetObject("Blue3", resourceCulture);
+                object obj = ResourceManager.GetObject("BlueClassFour", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,9 @@ namespace KingOfThievesWpfGemCalculator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Blue4 {
+        public static System.Drawing.Bitmap BlueClassNine {
             get {
-                object obj = ResourceManager.GetObject("Blue4", resourceCulture);
+                object obj = ResourceManager.GetObject("BlueClassNine", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +103,9 @@ namespace KingOfThievesWpfGemCalculator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Blue5 {
+        public static System.Drawing.Bitmap BlueClassOne {
             get {
-                object obj = ResourceManager.GetObject("Blue5", resourceCulture);
+                object obj = ResourceManager.GetObject("BlueClassOne", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +113,9 @@ namespace KingOfThievesWpfGemCalculator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Blue6 {
+        public static System.Drawing.Bitmap BlueClassSeven {
             get {
-                object obj = ResourceManager.GetObject("Blue6", resourceCulture);
+                object obj = ResourceManager.GetObject("BlueClassSeven", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +123,9 @@ namespace KingOfThievesWpfGemCalculator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Blue7 {
+        public static System.Drawing.Bitmap BlueClassSix {
             get {
-                object obj = ResourceManager.GetObject("Blue7", resourceCulture);
+                object obj = ResourceManager.GetObject("BlueClassSix", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +133,19 @@ namespace KingOfThievesWpfGemCalculator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Blue8 {
+        public static System.Drawing.Bitmap BlueClassThree {
             get {
-                object obj = ResourceManager.GetObject("Blue8", resourceCulture);
+                object obj = ResourceManager.GetObject("BlueClassThree", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap BlueClassTwo {
+            get {
+                object obj = ResourceManager.GetObject("BlueClassTwo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -162,9 +172,9 @@ namespace KingOfThievesWpfGemCalculator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Green1 {
+        public static System.Drawing.Bitmap DisableTrap {
             get {
-                object obj = ResourceManager.GetObject("Green1", resourceCulture);
+                object obj = ResourceManager.GetObject("DisableTrap", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -172,9 +182,9 @@ namespace KingOfThievesWpfGemCalculator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Green2 {
+        public static System.Drawing.Bitmap DoubleGold {
             get {
-                object obj = ResourceManager.GetObject("Green2", resourceCulture);
+                object obj = ResourceManager.GetObject("DoubleGold", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -182,9 +192,9 @@ namespace KingOfThievesWpfGemCalculator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Green3 {
+        public static System.Drawing.Bitmap GangOfThieves {
             get {
-                object obj = ResourceManager.GetObject("Green3", resourceCulture);
+                object obj = ResourceManager.GetObject("GangOfThieves", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -192,9 +202,9 @@ namespace KingOfThievesWpfGemCalculator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Green4 {
+        public static System.Drawing.Bitmap Ghost {
             get {
-                object obj = ResourceManager.GetObject("Green4", resourceCulture);
+                object obj = ResourceManager.GetObject("Ghost", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -202,9 +212,9 @@ namespace KingOfThievesWpfGemCalculator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Green5 {
+        public static System.Drawing.Bitmap GreenClassEight {
             get {
-                object obj = ResourceManager.GetObject("Green5", resourceCulture);
+                object obj = ResourceManager.GetObject("GreenClassEight", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -212,9 +222,9 @@ namespace KingOfThievesWpfGemCalculator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Green6 {
+        public static System.Drawing.Bitmap GreenClassFive {
             get {
-                object obj = ResourceManager.GetObject("Green6", resourceCulture);
+                object obj = ResourceManager.GetObject("GreenClassFive", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -222,9 +232,9 @@ namespace KingOfThievesWpfGemCalculator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Green7 {
+        public static System.Drawing.Bitmap GreenClassFour {
             get {
-                object obj = ResourceManager.GetObject("Green7", resourceCulture);
+                object obj = ResourceManager.GetObject("GreenClassFour", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -232,9 +242,59 @@ namespace KingOfThievesWpfGemCalculator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Green8 {
+        public static System.Drawing.Bitmap GreenClassNine {
             get {
-                object obj = ResourceManager.GetObject("Green8", resourceCulture);
+                object obj = ResourceManager.GetObject("GreenClassNine", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap GreenClassOne {
+            get {
+                object obj = ResourceManager.GetObject("GreenClassOne", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap GreenClassSeven {
+            get {
+                object obj = ResourceManager.GetObject("GreenClassSeven", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap GreenClassSix {
+            get {
+                object obj = ResourceManager.GetObject("GreenClassSix", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap GreenClassThree {
+            get {
+                object obj = ResourceManager.GetObject("GreenClassThree", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap GreenClassTwo {
+            get {
+                object obj = ResourceManager.GetObject("GreenClassTwo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -252,9 +312,9 @@ namespace KingOfThievesWpfGemCalculator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Purple1 {
+        public static System.Drawing.Bitmap Perfect {
             get {
-                object obj = ResourceManager.GetObject("Purple1", resourceCulture);
+                object obj = ResourceManager.GetObject("Perfect", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -262,9 +322,9 @@ namespace KingOfThievesWpfGemCalculator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Purple2 {
+        public static System.Drawing.Bitmap PurpleClassEight {
             get {
-                object obj = ResourceManager.GetObject("Purple2", resourceCulture);
+                object obj = ResourceManager.GetObject("PurpleClassEight", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -272,9 +332,9 @@ namespace KingOfThievesWpfGemCalculator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Purple3 {
+        public static System.Drawing.Bitmap PurpleClassFive {
             get {
-                object obj = ResourceManager.GetObject("Purple3", resourceCulture);
+                object obj = ResourceManager.GetObject("PurpleClassFive", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -282,9 +342,9 @@ namespace KingOfThievesWpfGemCalculator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Purple4 {
+        public static System.Drawing.Bitmap PurpleClassFour {
             get {
-                object obj = ResourceManager.GetObject("Purple4", resourceCulture);
+                object obj = ResourceManager.GetObject("PurpleClassFour", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -292,9 +352,9 @@ namespace KingOfThievesWpfGemCalculator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Purple5 {
+        public static System.Drawing.Bitmap PurpleClassNine {
             get {
-                object obj = ResourceManager.GetObject("Purple5", resourceCulture);
+                object obj = ResourceManager.GetObject("PurpleClassNine", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -302,9 +362,9 @@ namespace KingOfThievesWpfGemCalculator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Purple6 {
+        public static System.Drawing.Bitmap PurpleClassOne {
             get {
-                object obj = ResourceManager.GetObject("Purple6", resourceCulture);
+                object obj = ResourceManager.GetObject("PurpleClassOne", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -312,9 +372,9 @@ namespace KingOfThievesWpfGemCalculator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Purple7 {
+        public static System.Drawing.Bitmap PurpleClassSeven {
             get {
-                object obj = ResourceManager.GetObject("Purple7", resourceCulture);
+                object obj = ResourceManager.GetObject("PurpleClassSeven", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -322,9 +382,9 @@ namespace KingOfThievesWpfGemCalculator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Purple8 {
+        public static System.Drawing.Bitmap PurpleClassSix {
             get {
-                object obj = ResourceManager.GetObject("Purple8", resourceCulture);
+                object obj = ResourceManager.GetObject("PurpleClassSix", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -332,9 +392,9 @@ namespace KingOfThievesWpfGemCalculator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Red1 {
+        public static System.Drawing.Bitmap PurpleClassThree {
             get {
-                object obj = ResourceManager.GetObject("Red1", resourceCulture);
+                object obj = ResourceManager.GetObject("PurpleClassThree", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -342,9 +402,9 @@ namespace KingOfThievesWpfGemCalculator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Red2 {
+        public static System.Drawing.Bitmap PurpleClassTwo {
             get {
-                object obj = ResourceManager.GetObject("Red2", resourceCulture);
+                object obj = ResourceManager.GetObject("PurpleClassTwo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -352,9 +412,9 @@ namespace KingOfThievesWpfGemCalculator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Red3 {
+        public static System.Drawing.Bitmap RedClassEight {
             get {
-                object obj = ResourceManager.GetObject("Red3", resourceCulture);
+                object obj = ResourceManager.GetObject("RedClassEight", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -362,9 +422,9 @@ namespace KingOfThievesWpfGemCalculator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Red4 {
+        public static System.Drawing.Bitmap RedClassFive {
             get {
-                object obj = ResourceManager.GetObject("Red4", resourceCulture);
+                object obj = ResourceManager.GetObject("RedClassFive", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -372,9 +432,9 @@ namespace KingOfThievesWpfGemCalculator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Red5 {
+        public static System.Drawing.Bitmap RedClassFour {
             get {
-                object obj = ResourceManager.GetObject("Red5", resourceCulture);
+                object obj = ResourceManager.GetObject("RedClassFour", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -382,9 +442,9 @@ namespace KingOfThievesWpfGemCalculator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Red6 {
+        public static System.Drawing.Bitmap RedClassNine {
             get {
-                object obj = ResourceManager.GetObject("Red6", resourceCulture);
+                object obj = ResourceManager.GetObject("RedClassNine", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -392,9 +452,9 @@ namespace KingOfThievesWpfGemCalculator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Red7 {
+        public static System.Drawing.Bitmap RedClassOne {
             get {
-                object obj = ResourceManager.GetObject("Red7", resourceCulture);
+                object obj = ResourceManager.GetObject("RedClassOne", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -402,9 +462,9 @@ namespace KingOfThievesWpfGemCalculator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Red8 {
+        public static System.Drawing.Bitmap RedClassSeven {
             get {
-                object obj = ResourceManager.GetObject("Red8", resourceCulture);
+                object obj = ResourceManager.GetObject("RedClassSeven", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -412,9 +472,9 @@ namespace KingOfThievesWpfGemCalculator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Yellow1 {
+        public static System.Drawing.Bitmap RedClassSix {
             get {
-                object obj = ResourceManager.GetObject("Yellow1", resourceCulture);
+                object obj = ResourceManager.GetObject("RedClassSix", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -422,9 +482,9 @@ namespace KingOfThievesWpfGemCalculator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Yellow2 {
+        public static System.Drawing.Bitmap RedClassThree {
             get {
-                object obj = ResourceManager.GetObject("Yellow2", resourceCulture);
+                object obj = ResourceManager.GetObject("RedClassThree", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -432,9 +492,9 @@ namespace KingOfThievesWpfGemCalculator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Yellow3 {
+        public static System.Drawing.Bitmap RedClassTwo {
             get {
-                object obj = ResourceManager.GetObject("Yellow3", resourceCulture);
+                object obj = ResourceManager.GetObject("RedClassTwo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -442,9 +502,9 @@ namespace KingOfThievesWpfGemCalculator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Yellow4 {
+        public static System.Drawing.Bitmap SlowMotion {
             get {
-                object obj = ResourceManager.GetObject("Yellow4", resourceCulture);
+                object obj = ResourceManager.GetObject("SlowMotion", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -452,9 +512,9 @@ namespace KingOfThievesWpfGemCalculator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Yellow5 {
+        public static System.Drawing.Bitmap YellowClassEight {
             get {
-                object obj = ResourceManager.GetObject("Yellow5", resourceCulture);
+                object obj = ResourceManager.GetObject("YellowClassEight", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -462,9 +522,9 @@ namespace KingOfThievesWpfGemCalculator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Yellow6 {
+        public static System.Drawing.Bitmap YellowClassFive {
             get {
-                object obj = ResourceManager.GetObject("Yellow6", resourceCulture);
+                object obj = ResourceManager.GetObject("YellowClassFive", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -472,9 +532,9 @@ namespace KingOfThievesWpfGemCalculator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Yellow7 {
+        public static System.Drawing.Bitmap YellowClassFour {
             get {
-                object obj = ResourceManager.GetObject("Yellow7", resourceCulture);
+                object obj = ResourceManager.GetObject("YellowClassFour", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -482,9 +542,59 @@ namespace KingOfThievesWpfGemCalculator.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap Yellow8 {
+        public static System.Drawing.Bitmap YellowClassNine {
             get {
-                object obj = ResourceManager.GetObject("Yellow8", resourceCulture);
+                object obj = ResourceManager.GetObject("YellowClassNine", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap YellowClassOne {
+            get {
+                object obj = ResourceManager.GetObject("YellowClassOne", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap YellowClassSeven {
+            get {
+                object obj = ResourceManager.GetObject("YellowClassSeven", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap YellowClassSix {
+            get {
+                object obj = ResourceManager.GetObject("YellowClassSix", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap YellowClassThree {
+            get {
+                object obj = ResourceManager.GetObject("YellowClassThree", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap YellowClassTwo {
+            get {
+                object obj = ResourceManager.GetObject("YellowClassTwo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
