@@ -54,40 +54,104 @@
                      Grid.Column="1"
                      x:Name="FirstGemTextBox"
                      MaxLength="6"
-                     PreviewTextInput="NumberTextBoxValueChanged"
-                     Text="{Binding FirstGem, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                     Text="{Binding First.Amount, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                      TabIndex="0" />
             <StackPanel Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" Orientation="Horizontal">
-              <RadioButton Content="Blue" GroupName="FirstGemColor" Margin="0,0,4,0" Checked="GemColorChanged" Tag="first|Blue" IsTabStop="False" x:Name="FirstColorDefault" />
-              <RadioButton Content="Green" GroupName="FirstGemColor" Margin="0,0,4,0" Checked="GemColorChanged" Tag="first|Green" IsTabStop="False" />
-              <RadioButton Content="Purple" GroupName="FirstGemColor" Margin="0,0,4,0" Checked="GemColorChanged" Tag="first|Purple" IsTabStop="False" />
-              <RadioButton Content="Red" GroupName="FirstGemColor" Margin="0,0,4,0" Checked="GemColorChanged" Tag="first|Red" IsTabStop="False" />
-              <RadioButton Content="Yellow" GroupName="FirstGemColor" Checked="GemColorChanged" Tag="first|Yellow" IsTabStop="False" />
+              <RadioButton Content="Blue"
+                           GroupName="FirstGemColor"
+                           Margin="0,0,4,0"
+                           IsTabStop="False"
+                           IsChecked="{Binding First.Color, Converter={StaticResource GemColorToBooleanConverter}, ConverterParameter=Blue, Mode=TwoWay}" />
+              <RadioButton Content="Green"
+                           GroupName="FirstGemColor"
+                           Margin="0,0,4,0"
+                           IsTabStop="False"
+                           IsChecked="{Binding First.Color, Converter={StaticResource GemColorToBooleanConverter}, ConverterParameter=Green, Mode=TwoWay}" />
+              <RadioButton Content="Purple"
+                           GroupName="FirstGemColor"
+                           Margin="0,0,4,0"
+                           IsTabStop="False"
+                           IsChecked="{Binding First.Color, Converter={StaticResource GemColorToBooleanConverter}, ConverterParameter=Purple, Mode=TwoWay}" />
+              <RadioButton Content="Red"
+                           GroupName="FirstGemColor"
+                           Margin="0,0,4,0"
+                           IsTabStop="False"
+                           IsChecked="{Binding First.Color, Converter={StaticResource GemColorToBooleanConverter}, ConverterParameter=Red, Mode=TwoWay}" />
+              <RadioButton Content="Yellow"
+                           GroupName="FirstGemColor"
+                           IsTabStop="False"
+                           IsChecked="{Binding First.Color, Converter={StaticResource GemColorToBooleanConverter}, ConverterParameter=Yellow, Mode=TwoWay}" />
             </StackPanel>
 
             <Label Grid.Row="1" Grid.Column="0" Content="Second" />
-            <TextBox Grid.Row="1" Grid.Column="1" MaxLength="6" PreviewTextInput="NumberTextBoxValueChanged" Text="{Binding SecondGem, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" TabIndex="1" />
+            <TextBox Grid.Row="1"
+                     Grid.Column="1"
+                     MaxLength="6"
+                     Text="{Binding Second.Amount, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                     TabIndex="1" />
             <StackPanel Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" Orientation="Horizontal">
-              <RadioButton Content="Blue" GroupName="SecondGemColor" Margin="0,0,4,0" Checked="GemColorChanged" Tag="second|Blue" IsTabStop="False" x:Name="SecondColorDefault" />
-              <RadioButton Content="Green" GroupName="SecondGemColor" Margin="0,0,4,0" Checked="GemColorChanged" Tag="second|Green" IsTabStop="False" />
-              <RadioButton Content="Purple" GroupName="SecondGemColor" Margin="0,0,4,0" Checked="GemColorChanged" Tag="second|Purple" IsTabStop="False" />
-              <RadioButton Content="Red" GroupName="SecondGemColor" Margin="0,0,4,0" Checked="GemColorChanged" Tag="second|Red" IsTabStop="False" />
-              <RadioButton Content="Yellow" GroupName="SecondGemColor" Checked="GemColorChanged" Tag="second|Yellow" IsTabStop="False" />
+              <RadioButton Content="Blue"
+                           GroupName="SecondGemColor"
+                           Margin="0,0,4,0"
+                           IsTabStop="False"
+                           IsChecked="{Binding Second.Color, Converter={StaticResource GemColorToBooleanConverter}, ConverterParameter=Blue, Mode=TwoWay}" />
+              <RadioButton Content="Green"
+                           GroupName="SecondGemColor"
+                           Margin="0,0,4,0"
+                           IsTabStop="False"
+                           IsChecked="{Binding Second.Color, Converter={StaticResource GemColorToBooleanConverter}, ConverterParameter=Green, Mode=TwoWay}" />
+              <RadioButton Content="Purple"
+                           GroupName="SecondGemColor"
+                           Margin="0,0,4,0"
+                           IsTabStop="False"
+                           IsChecked="{Binding Second.Color, Converter={StaticResource GemColorToBooleanConverter}, ConverterParameter=Purple, Mode=TwoWay}" />
+              <RadioButton Content="Red"
+                           GroupName="SecondGemColor"
+                           Margin="0,0,4,0"
+                           IsTabStop="False"
+                           IsChecked="{Binding Second.Color, Converter={StaticResource GemColorToBooleanConverter}, ConverterParameter=Red, Mode=TwoWay}" />
+              <RadioButton Content="Yellow"
+                           GroupName="SecondGemColor"
+                           IsTabStop="False"
+                           IsChecked="{Binding Second.Color, Converter={StaticResource GemColorToBooleanConverter}, ConverterParameter=Yellow, Mode=TwoWay}" />
             </StackPanel>
 
             <Label Grid.Row="2" Grid.Column="0" Content="Third" />
-            <TextBox Grid.Row="2" Grid.Column="1" MaxLength="6" PreviewTextInput="NumberTextBoxValueChanged" Text="{Binding ThirdGem, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" TabIndex="2" />
+            <TextBox Grid.Row="2"
+                     Grid.Column="1"
+                     MaxLength="6"
+                     Text="{Binding Third.Amount, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                     TabIndex="2" />
             <StackPanel Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" Orientation="Horizontal">
-              <RadioButton Content="Blue" GroupName="ThirdGemColor" Margin="0,0,4,0" Checked="GemColorChanged" Tag="third|Blue" IsTabStop="False" x:Name="ThirdColorDefault" />
-              <RadioButton Content="Green" GroupName="ThirdGemColor" Margin="0,0,4,0" Checked="GemColorChanged" Tag="third|Green" IsTabStop="False" />
-              <RadioButton Content="Purple" GroupName="ThirdGemColor" Margin="0,0,4,0" Checked="GemColorChanged" Tag="third|Purple" IsTabStop="False" />
-              <RadioButton Content="Red" GroupName="ThirdGemColor" Margin="0,0,4,0" Checked="GemColorChanged" Tag="third|Red" IsTabStop="False" />
-              <RadioButton Content="Yellow" GroupName="ThirdGemColor" Checked="GemColorChanged" Tag="third|Yellow" IsTabStop="False" />
+              <RadioButton Content="Blue"
+                           GroupName="ThirdGemColor"
+                           Margin="0,0,4,0"
+                           IsTabStop="False"
+                           IsChecked="{Binding Third.Color, Converter={StaticResource GemColorToBooleanConverter}, ConverterParameter=Blue, Mode=TwoWay}" />
+              <RadioButton Content="Green"
+                           GroupName="ThirdGemColor"
+                           Margin="0,0,4,0"
+                           IsTabStop="False"
+                           IsChecked="{Binding Third.Color, Converter={StaticResource GemColorToBooleanConverter}, ConverterParameter=Green, Mode=TwoWay}" />
+              <RadioButton Content="Purple"
+                           GroupName="ThirdGemColor"
+                           Margin="0,0,4,0"
+                           IsTabStop="False"
+                           IsChecked="{Binding Third.Color, Converter={StaticResource GemColorToBooleanConverter}, ConverterParameter=Purple, Mode=TwoWay}" />
+              <RadioButton Content="Red"
+                           GroupName="ThirdGemColor"
+                           Margin="0,0,4,0"
+                           IsTabStop="False"
+                           IsChecked="{Binding Third.Color, Converter={StaticResource GemColorToBooleanConverter}, ConverterParameter=Red, Mode=TwoWay}" />
+              <RadioButton Content="Yellow"
+                           GroupName="ThirdGemColor"
+                           IsTabStop="False"
+                           IsChecked="{Binding Third.Color, Converter={StaticResource GemColorToBooleanConverter}, ConverterParameter=Yellow, Mode=TwoWay}" />
             </StackPanel>
 
             <Label Grid.Row="3" Grid.Column="0" Content="Bonus" />
             <StackPanel Grid.Row="3" Grid.Column="1" Orientation="Horizontal" Margin="0">
-              <TextBox MaxLength="3" MinWidth="25" Width="20" PreviewTextInput="NumberTextBoxValueChanged" Text="{Binding BonusPercentage, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" TabIndex="3" />
+              <TextBox MaxLength="3" MinWidth="25" Width="20" Text="{Binding BonusPercentage, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" TabIndex="3" />
               <Label Content="%" />
             </StackPanel>
 
@@ -144,13 +208,13 @@
 
           <Label Grid.Row="3" Grid.Column="0" Content="Gem Result" />
           <Border Grid.Row="3" Grid.Column="1" BorderBrush="LightGray" BorderThickness="1" HorizontalAlignment="Left">
-            <Image Height="48" Width="48" Source="{Binding GemResult}" />
+            <Image Height="48" Width="48" Source="{Binding GemResult}" Margin="4" />
           </Border>
           
 
           <Label Grid.Row="3" Grid.Column="2" Content="Bonus Potion" />
           <Border Grid.Row="3" Grid.Column="3" BorderBrush="LightGray" BorderThickness="1" HorizontalAlignment="Left">
-            <Image Height="48" Width="48" Source="{Binding PotionResult}" />
+            <Image Height="48" Width="48" Source="{Binding PotionResult}" Margin="4" />
           </Border>
         </Grid>
       </GroupBox>
