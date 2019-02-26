@@ -26,6 +26,7 @@
       <Grid.RowDefinitions>
         <RowDefinition Height="Auto" />
         <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
       </Grid.RowDefinitions>
 
       <GroupBox Grid.Row="0" Header="Ritual Gems">
@@ -54,104 +55,104 @@
                      Grid.Column="1"
                      x:Name="FirstGemTextBox"
                      MaxLength="6"
-                     Text="{Binding First.Amount, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                     Text="{Binding FirstGem.Amount, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                      TabIndex="0" />
             <StackPanel Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" Orientation="Horizontal">
               <RadioButton Content="Blue"
                            GroupName="FirstGemColor"
                            Margin="0,0,4,0"
                            IsTabStop="False"
-                           IsChecked="{Binding First.Color, Converter={StaticResource GemColorToBooleanConverter}, ConverterParameter=Blue, Mode=TwoWay}" />
+                           IsChecked="{Binding FirstGem.Color, Converter={StaticResource GemColorToBooleanConverter}, ConverterParameter=Blue, Mode=TwoWay}" />
               <RadioButton Content="Green"
                            GroupName="FirstGemColor"
                            Margin="0,0,4,0"
                            IsTabStop="False"
-                           IsChecked="{Binding First.Color, Converter={StaticResource GemColorToBooleanConverter}, ConverterParameter=Green, Mode=TwoWay}" />
+                           IsChecked="{Binding FirstGem.Color, Converter={StaticResource GemColorToBooleanConverter}, ConverterParameter=Green, Mode=TwoWay}" />
               <RadioButton Content="Purple"
                            GroupName="FirstGemColor"
                            Margin="0,0,4,0"
                            IsTabStop="False"
-                           IsChecked="{Binding First.Color, Converter={StaticResource GemColorToBooleanConverter}, ConverterParameter=Purple, Mode=TwoWay}" />
+                           IsChecked="{Binding FirstGem.Color, Converter={StaticResource GemColorToBooleanConverter}, ConverterParameter=Purple, Mode=TwoWay}" />
               <RadioButton Content="Red"
                            GroupName="FirstGemColor"
                            Margin="0,0,4,0"
                            IsTabStop="False"
-                           IsChecked="{Binding First.Color, Converter={StaticResource GemColorToBooleanConverter}, ConverterParameter=Red, Mode=TwoWay}" />
+                           IsChecked="{Binding FirstGem.Color, Converter={StaticResource GemColorToBooleanConverter}, ConverterParameter=Red, Mode=TwoWay}" />
               <RadioButton Content="Yellow"
                            GroupName="FirstGemColor"
                            IsTabStop="False"
-                           IsChecked="{Binding First.Color, Converter={StaticResource GemColorToBooleanConverter}, ConverterParameter=Yellow, Mode=TwoWay}" />
+                           IsChecked="{Binding FirstGem.Color, Converter={StaticResource GemColorToBooleanConverter}, ConverterParameter=Yellow, Mode=TwoWay}" />
             </StackPanel>
 
             <Label Grid.Row="1" Grid.Column="0" Content="Second" />
             <TextBox Grid.Row="1"
                      Grid.Column="1"
                      MaxLength="6"
-                     Text="{Binding Second.Amount, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                     Text="{Binding SecondGem.Amount, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                      TabIndex="1" />
             <StackPanel Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" Orientation="Horizontal">
               <RadioButton Content="Blue"
                            GroupName="SecondGemColor"
                            Margin="0,0,4,0"
                            IsTabStop="False"
-                           IsChecked="{Binding Second.Color, Converter={StaticResource GemColorToBooleanConverter}, ConverterParameter=Blue, Mode=TwoWay}" />
+                           IsChecked="{Binding SecondGem.Color, Converter={StaticResource GemColorToBooleanConverter}, ConverterParameter=Blue, Mode=TwoWay}" />
               <RadioButton Content="Green"
                            GroupName="SecondGemColor"
                            Margin="0,0,4,0"
                            IsTabStop="False"
-                           IsChecked="{Binding Second.Color, Converter={StaticResource GemColorToBooleanConverter}, ConverterParameter=Green, Mode=TwoWay}" />
+                           IsChecked="{Binding SecondGem.Color, Converter={StaticResource GemColorToBooleanConverter}, ConverterParameter=Green, Mode=TwoWay}" />
               <RadioButton Content="Purple"
                            GroupName="SecondGemColor"
                            Margin="0,0,4,0"
                            IsTabStop="False"
-                           IsChecked="{Binding Second.Color, Converter={StaticResource GemColorToBooleanConverter}, ConverterParameter=Purple, Mode=TwoWay}" />
+                           IsChecked="{Binding SecondGem.Color, Converter={StaticResource GemColorToBooleanConverter}, ConverterParameter=Purple, Mode=TwoWay}" />
               <RadioButton Content="Red"
                            GroupName="SecondGemColor"
                            Margin="0,0,4,0"
                            IsTabStop="False"
-                           IsChecked="{Binding Second.Color, Converter={StaticResource GemColorToBooleanConverter}, ConverterParameter=Red, Mode=TwoWay}" />
+                           IsChecked="{Binding SecondGem.Color, Converter={StaticResource GemColorToBooleanConverter}, ConverterParameter=Red, Mode=TwoWay}" />
               <RadioButton Content="Yellow"
                            GroupName="SecondGemColor"
                            IsTabStop="False"
-                           IsChecked="{Binding Second.Color, Converter={StaticResource GemColorToBooleanConverter}, ConverterParameter=Yellow, Mode=TwoWay}" />
+                           IsChecked="{Binding SecondGem.Color, Converter={StaticResource GemColorToBooleanConverter}, ConverterParameter=Yellow, Mode=TwoWay}" />
             </StackPanel>
 
             <Label Grid.Row="2" Grid.Column="0" Content="Third" />
             <TextBox Grid.Row="2"
                      Grid.Column="1"
                      MaxLength="6"
-                     Text="{Binding Third.Amount, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                     Text="{Binding ThirdGem.Amount, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                      TabIndex="2" />
             <StackPanel Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" Orientation="Horizontal">
               <RadioButton Content="Blue"
                            GroupName="ThirdGemColor"
                            Margin="0,0,4,0"
                            IsTabStop="False"
-                           IsChecked="{Binding Third.Color, Converter={StaticResource GemColorToBooleanConverter}, ConverterParameter=Blue, Mode=TwoWay}" />
+                           IsChecked="{Binding ThirdGem.Color, Converter={StaticResource GemColorToBooleanConverter}, ConverterParameter=Blue, Mode=TwoWay}" />
               <RadioButton Content="Green"
                            GroupName="ThirdGemColor"
                            Margin="0,0,4,0"
                            IsTabStop="False"
-                           IsChecked="{Binding Third.Color, Converter={StaticResource GemColorToBooleanConverter}, ConverterParameter=Green, Mode=TwoWay}" />
+                           IsChecked="{Binding ThirdGem.Color, Converter={StaticResource GemColorToBooleanConverter}, ConverterParameter=Green, Mode=TwoWay}" />
               <RadioButton Content="Purple"
                            GroupName="ThirdGemColor"
                            Margin="0,0,4,0"
                            IsTabStop="False"
-                           IsChecked="{Binding Third.Color, Converter={StaticResource GemColorToBooleanConverter}, ConverterParameter=Purple, Mode=TwoWay}" />
+                           IsChecked="{Binding ThirdGem.Color, Converter={StaticResource GemColorToBooleanConverter}, ConverterParameter=Purple, Mode=TwoWay}" />
               <RadioButton Content="Red"
                            GroupName="ThirdGemColor"
                            Margin="0,0,4,0"
                            IsTabStop="False"
-                           IsChecked="{Binding Third.Color, Converter={StaticResource GemColorToBooleanConverter}, ConverterParameter=Red, Mode=TwoWay}" />
+                           IsChecked="{Binding ThirdGem.Color, Converter={StaticResource GemColorToBooleanConverter}, ConverterParameter=Red, Mode=TwoWay}" />
               <RadioButton Content="Yellow"
                            GroupName="ThirdGemColor"
                            IsTabStop="False"
-                           IsChecked="{Binding Third.Color, Converter={StaticResource GemColorToBooleanConverter}, ConverterParameter=Yellow, Mode=TwoWay}" />
+                           IsChecked="{Binding ThirdGem.Color, Converter={StaticResource GemColorToBooleanConverter}, ConverterParameter=Yellow, Mode=TwoWay}" />
             </StackPanel>
 
             <Label Grid.Row="3" Grid.Column="0" Content="Bonus" />
             <StackPanel Grid.Row="3" Grid.Column="1" Orientation="Horizontal" Margin="0">
-              <TextBox MaxLength="3" MinWidth="25" Width="20" Text="{Binding BonusPercentage, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" TabIndex="3" />
+              <TextBox MaxLength="2" MinWidth="25" Width="20" Text="{Binding BonusPercentage, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" TabIndex="3" />
               <Label Content="%" />
             </StackPanel>
 
@@ -172,7 +173,29 @@
         </Grid>
       </GroupBox>
 
-      <GroupBox Grid.Row="1" Header="Ritual Results">
+      <GroupBox Grid.Row="1" Header="Gems Used">
+        <Grid>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+          </Grid.ColumnDefinitions>
+
+          <Border Grid.Column="0" BorderBrush="LightGray" BorderThickness="1" HorizontalAlignment="Center">
+            <Image Height="48" Width="48" Source="{Binding FirstGemImage}" Margin="4" />
+          </Border>
+
+          <Border Grid.Column="1" BorderBrush="LightGray" BorderThickness="1" HorizontalAlignment="Center">
+            <Image Height="48" Width="48" Source="{Binding SecondGemImage}" Margin="4" />
+          </Border>
+
+          <Border Grid.Column="2" BorderBrush="LightGray" BorderThickness="1" HorizontalAlignment="Center">
+            <Image Height="48" Width="48" Source="{Binding ThirdGemImage}" Margin="4" />
+          </Border>
+        </Grid>
+      </GroupBox>
+
+      <GroupBox Grid.Row="2" Header="Ritual Results">
         <Grid>
           <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -189,22 +212,22 @@
           </Grid.ColumnDefinitions>
 
           <Label Grid.Row="0" Grid.Column="0" Content="Goal" />
-          <TextBox Grid.Row="0" Grid.Column="1" IsEnabled="False" IsReadOnly="True" Text="{Binding Goal, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+          <TextBox Grid.Row="0" Grid.Column="1" IsEnabled="False" IsReadOnly="True" Text="{Binding Ritual.Goal, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
 
           <Label Grid.Row="0" Grid.Column="2" Content="Gem Total" />
-          <TextBox Grid.Row="0" Grid.Column="3" IsEnabled="False" IsReadOnly="True" Text="{Binding GemTotal, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+          <TextBox Grid.Row="0" Grid.Column="3" IsEnabled="False" IsReadOnly="True" Text="{Binding Ritual.GemTotal, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
 
           <Label Grid.Row="1" Grid.Column="0" Content="Remaining" />
-          <TextBox Grid.Row="1" Grid.Column="1" IsEnabled="False" IsReadOnly="True" Text="{Binding Remaining, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+          <TextBox Grid.Row="1" Grid.Column="1" IsEnabled="False" IsReadOnly="True" Text="{Binding Ritual.Remaining, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
 
           <Label Grid.Row="1" Grid.Column="2" Content="Bonus" />
-          <TextBox Grid.Row="1" Grid.Column="3" IsEnabled="False" IsReadOnly="True" Text="{Binding Bonus, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+          <TextBox Grid.Row="1" Grid.Column="3" IsEnabled="False" IsReadOnly="True" Text="{Binding Ritual.Bonus, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
 
           <Label Grid.Row="2" Grid.Column="2" Content="Total w/Bonus" />
-          <TextBox Grid.Row="2" Grid.Column="3" IsEnabled="False" IsReadOnly="True" Text="{Binding TotalWithBonus, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+          <TextBox Grid.Row="2" Grid.Column="3" IsEnabled="False" IsReadOnly="True" Text="{Binding Ritual.TotalWithBonus, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
 
           <Label Grid.Row="2" Grid.Column="0" Content="Result Total" />
-          <TextBox Grid.Row="2" Grid.Column="1" IsEnabled="False" IsReadOnly="True" Text="{Binding ResultTotal, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+          <TextBox Grid.Row="2" Grid.Column="1" IsEnabled="False" IsReadOnly="True" Text="{Binding Ritual.ResultTotal, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
 
           <Label Grid.Row="3" Grid.Column="0" Content="Gem Result" />
           <Border Grid.Row="3" Grid.Column="1" BorderBrush="LightGray" BorderThickness="1" HorizontalAlignment="Left">

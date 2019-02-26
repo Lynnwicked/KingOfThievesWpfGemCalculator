@@ -68,6 +68,8 @@
     <Compile Include="Converters\GemColorToBooleanConverter.cs" />
     <Compile Include="Enums\GemColor.cs" />
     <Compile Include="Extensions\GemExtensions.cs" />
+    <Compile Include="Extensions\RitualExtensions.cs" />
+    <Compile Include="Models\Ritual.cs" />
     <Compile Include="Models\Gem.cs" />
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -76,6 +78,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Resources\Constants\Constants.cs" />
+    <Compile Include="Utilities\GemUtility.cs" />
     <Compile Include="Utilities\RitualUtility.cs" />
     <Compile Include="ViewModels\AboutViewModel.cs" />
     <Compile Include="ViewModels\GemCalculatorViewModel.cs" />

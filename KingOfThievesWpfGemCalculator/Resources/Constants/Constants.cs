@@ -1,6 +1,8 @@
 ﻿namespace KingOfThievesWpfGemCalculator.Resources.Constants {
-  public class Constants {
-    public const int PERFECT_GEM_SIZE = 2999997;
-    public const int SEMI_PERFECT_GEM_SIZE = 999999;
+  public static class Constants {
+    public static class GemSizes {
+      public const int PERFECT = 2999997;
+      public const int SEMI_PERFECT = 999999;
+    }
   }
 }
