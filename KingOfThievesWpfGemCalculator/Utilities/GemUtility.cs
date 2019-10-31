@@ -1,6 +1,5 @@
 ﻿using System;
 using KingOfThievesWpfGemCalculator.Enums;
-using KingOfThievesWpfGemCalculator.Resources.Constants;
 
 namespace KingOfThievesWpfGemCalculator.Utilities {
   public static class GemUtility {
@@ -28,13 +27,13 @@ namespace KingOfThievesWpfGemCalculator.Utilities {
       else if (size > 99999 && size <= 299999) {
         result = $"pack://application:,,,/Resources/Images/Gems/{color}/{color}ClassSeven.png";
       }
-      else if (size > 299999 && size <= Constants.GemSizes.SEMI_PERFECT) {
+      else if (size > 299999 && size <= Constants.Constants.GemSizes.SEMI_PERFECT) {
         result = $"pack://application:,,,/Resources/Images/Gems/{color}/{color}ClassEight.png";
       }
-      else if (size > Constants.GemSizes.SEMI_PERFECT && size < Constants.GemSizes.PERFECT) {
+      else if (size > Constants.Constants.GemSizes.SEMI_PERFECT && size < Constants.Constants.GemSizes.PERFECT) {
         result = $"pack://application:,,,/Resources/Images/Gems/{color}/{color}ClassNine.png";
       }
-      else if (size == Constants.GemSizes.PERFECT) {
+      else if (size == Constants.Constants.GemSizes.PERFECT) {
         result = "pack://application:,,,/Resources/Images/Gems/Perfect/Perfect.png";
       }
       else {

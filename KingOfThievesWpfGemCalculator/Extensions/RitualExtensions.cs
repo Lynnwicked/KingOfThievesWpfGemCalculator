@@ -1,11 +1,10 @@
 ﻿using System;
 using KingOfThievesWpfGemCalculator.Models;
-using KingOfThievesWpfGemCalculator.Resources.Constants;
 
 namespace KingOfThievesWpfGemCalculator.Extensions {
   public static class RitualExtensions {
     public static bool IsSemiPerfectRitual(this Ritual r) {
-      return r.TotalWithBonus <= Constants.GemSizes.SEMI_PERFECT + r.Bonus;
+      return r.TotalWithBonus <= Constants.Constants.GemSizes.SEMI_PERFECT + r.Bonus;
     }
 
     public static void CalculateTotalWithBonus(this Ritual r, int bonusPercentage) {
@@ -17,7 +16,7 @@ namespace KingOfThievesWpfGemCalculator.Extensions {
     }
 
     public static void CalculatePerfectRitual(this Ritual r, int bonusPercentage) {
-      r.Goal = Constants.GemSizes.PERFECT;
+      r.Goal = Constants.Constants.GemSizes.PERFECT;
 
       if (r.TotalWithBonus >= r.Goal) {
         CalculateActualBonus(r);
@@ -28,7 +27,7 @@ namespace KingOfThievesWpfGemCalculator.Extensions {
     }
 
     public static void CalculateSemiPerfectRitual(this Ritual r, int bonusPercentage) {
-      r.Goal = Constants.GemSizes.SEMI_PERFECT;
+      r.Goal = Constants.Constants.GemSizes.SEMI_PERFECT;
 
       var max = r.Goal + r.Bonus;
 

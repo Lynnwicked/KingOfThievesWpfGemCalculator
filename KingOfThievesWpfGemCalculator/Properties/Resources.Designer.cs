@@ -19,7 +19,7 @@ namespace KingOfThievesWpfGemCalculator.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class Resources {
@@ -320,6 +320,16 @@ namespace KingOfThievesWpfGemCalculator.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] Prism {
+            get {
+                object obj = ResourceManager.GetObject("Prism", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         public static System.Drawing.Bitmap PurpleClassEight {
@@ -506,6 +516,26 @@ namespace KingOfThievesWpfGemCalculator.Properties {
             get {
                 object obj = ResourceManager.GetObject("SlowMotion", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] System_ValueTuple {
+            get {
+                object obj = ResourceManager.GetObject("System_ValueTuple", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        public static byte[] WpfAnimatedGif {
+            get {
+                object obj = ResourceManager.GetObject("WpfAnimatedGif", resourceCulture);
+                return ((byte[])(obj));
             }
         }
         
